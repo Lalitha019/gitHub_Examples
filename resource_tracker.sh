@@ -37,3 +37,8 @@ aws lambda list-functions
 echo "Print list of IAM Users"
 aws iam list-users
 
+
+
+
+# used the below cron tab to schedule the cron job to be run everyday at 6 PM and store the logs.
+# 0 18 * * * /home/ubuntu/aws_resource_tracker.sh >> /home/ubuntu/cron.log 2>&1
